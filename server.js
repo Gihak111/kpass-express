@@ -22,6 +22,11 @@ app.use(bodyParser.json());
 // 파일 업로드를 처리하는 미들웨어
 const upload = multer({ dest: 'uploads/' });
 
+// 간단한 HelloWorld 엔드포인트 추가
+app.get('/hello', (req, res) => {
+  res.send('Hello, World!');
+});
+
 // 네트워크 모니터링: URL이 차단되었는지 확인
 app.post('/check-url', (req, res) => {
   const { url } = req.body;
