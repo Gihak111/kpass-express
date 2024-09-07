@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 // Flask 서버 URL 설정
-const FLASK_SERVER_URL = 'http://127.0.0.1:5000';  // 실제 Flask 서버 URL로 교체할 것
+const FLASK_SERVER_URL = 'https://port-0-kpass-flask-m0rc2yaj6eba411b.sel4.cloudtype.app/';  // 실제 Flask 서버 URL로 교체할 것
 
 // 차단할 도메인 리스트
 const BLOCKED_DOMAINS = ['malicious.com', 'phishing.com'];
